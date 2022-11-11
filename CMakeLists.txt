@@ -4,7 +4,7 @@ project(gl_bindings)
 
 set(CMAKE_CXX_STANDARD, 17)
 
-add_library(gl_bindings main.cpp)
+add_library(gl_bindings main.cpp glb/Shader.cpp glb/Exception.h)
 
 set(EXT_DEPS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/extDeps)
 
